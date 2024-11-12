@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Apex Legends Superfan</title>
+  </head>
+  <body>
+    <!-- left half of screen -->
+    <div class="row">
+      <!-- first column -->
+      <div class="coloumn center-content">
+        <div class="title center-content">
+          <h1>Character: Horizon Stats: 11 Kills with 3,170 DMG</h1>
+        </div>
+        <div class="content">
+          <div class="content-2 center-content">
+            <img
+              class="clickable"
+              src="images/Horizon.png"
+              id="Horizon"
+              onclick="changeHorizon()"
+            />
+          </div>
+          <div class="content-2">
+            <div class="content-3 center-content">
+              <div class="weapon center-content">
+                <img
+                  class="clickable"
+                  src="images/Triple-Take.png"
+                  id="3Take"
+                  onclick="playTriple()"
+                />
+              </div>
+              <div class="weapon center-content">
+                <img
+                  class="clickable"
+                  src="images/L-star.png"
+                  id="Estrella"
+                  onclick="playStar()"
+                />
+              </div>
+            </div>
+            <div class="vid center-content">
+              <iframe
+                class="hide"
+                width="100%"
+                height="100%"
+                src=""
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                id="Frame"
+              ></iframe>
+              <img
+                src="images/Leader.png"
+                onclick="playLeader()"
+                class="clickable"
+                id="Leader"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second column -->
+      <div class="coloumn center-content">
+        <div class="title center-content">
+          <h1>Character: Lifeline Stats: 10 Kills with 2,890 DMG</h1>
+        </div>
+        <div class="content">
+          <div class="content-2 center-content">
+            <img
+              src="images/Lifeline.png"
+              class="clickable"
+              id="Life"
+              onclick="changeLife()"
+            />
+          </div>
+          <div class="content-2">
+            <div class="content-3 center-content">
+              <div class="weapon center-content">
+                <img
+                  src="images/Flatline.png"
+                  class="clickable"
+                  id="Flat"
+                  onclick="playFlat()"
+                />
+              </div>
+              <div class="weapon center-content">
+                <img
+                  src="images/R-99.png"
+                  class="clickable"
+                  id="SMG"
+                  onclick="playR9()"
+                />
+              </div>
+            </div>
+            <div class="vid center-content">
+              <iframe
+                class="hide"
+                width="100%"
+                height="100%"
+                src=""
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                id="Frame2"
+              ></iframe>
+              <img
+                class="clickable"
+                src="images/LifeChamp(Edit).png"
+                onclick="lifeVideo()"
+                id="Champ"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Right half of the Screen-->
+    <!--Third column-->
+    <div class="row">
+      <div class="coloumn center-content">
+        <div class="title center-content">
+          <h1>Character: Lifeline Stats: 6 Kills with 2116 DMG</h1>
+        </div>
+        <div class="content">
+          <div class="content-2 center-content">
+            <img
+              class="clickable"
+              src="images/Peaceline.png"
+              id="Finish"
+              onclick="changePeace()"
+            />
+          </div>
+          <div class="content-2">
+            <div class="content-3 center-content">
+              <div class="weapon center-content">
+                <img
+                  src="images/CAR.png"
+                  class="clickable"
+                  id="Zoom"
+                  onclick="playCar()"
+                />
+              </div>
+              <div class="weapon center-content">
+                <img
+                  class="clickable"
+                  src="images/Peacekeeper.png"
+                  id="9DMG"
+                  onclick="playPeace()"
+                />
+              </div>
+            </div>
+            <div class="vid center-content">
+              <iframe
+                class="hide"
+                width="100%"
+                height="100%"
+                src=""
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                id="Frame3"
+              ></iframe>
+
+              <img
+                hover
+                src="images/LifeWin.png"
+                onclick="playClutch()"
+                id="Clutch"
+                class="clickable"
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth column -->
+      <div class="coloumn center-content">
+        <div class="title center-content">
+          <h1>Character: Conduit Stats: 9 Kills with 2,527 DMG</h1>
+        </div>
+        <div class="content">
+          <div class="content-2 center-content">
+            <img
+              src="images/Conduit.png"
+              class="clickable"
+              id="Elec"
+              onclick="changeElec()"
+            />
+          </div>
+          <div class="content-2">
+            <div class="content-3 center-content">
+              <div class="weapon center-content">
+                <img
+                  src="images/Hemlok.png"
+                  class="clickable"
+                  id="Hemlok"
+                  onclick="playHem()"
+                />
+              </div>
+              <div class="weapon center-content">
+                <img
+                  class="clickable"
+                  src="images/Alternator.png"
+                  id="SMG2"
+                  onclick="playAlt()"
+                />
+              </div>
+            </div>
+            <div class="vid center-content">
+              <iframe
+                class="hide"
+                width="100%"
+                height="100%"
+                src=""
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                id="Frame4"
+              ></iframe>
+
+              <img
+                src="images/conduitChamp.png"
+                class="clickable"
+                onclick="playElec()"
+                id="Champion"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <audio>
+      <audio src="sounds/L-STAR.mp3" id="Star"></audio>
+      <audio src="sounds/Triple-Take.mp3" id="3Gun"></audio>
+      <audio src="sounds/Flatline.mp3" id="Line"></audio>
+      <audio src="sounds/R99.mp3" id="R9"></audio>
+      <audio src="sounds/Hemlok.mp3" id="3Burst"></audio>
+      <audio src="sounds/Alternator.mp3" id="Twinsies"></audio>
+      <audio src="sounds/Car.mp3" id="Vroom"></audio>
+      <audio src="sounds/PeaceKeeper.mp3" id="Shawty"></audio>
+    </audio>
+  </body>
+</html>
