@@ -1,0 +1,146 @@
+//Variables Begin\\
+h1 = document.getElementById("Horizon");
+h2 = document.getElementById("3Take");
+h3 = document.getElementById("Estrella");
+h4 = document.getElementById("Leader");
+
+l1 = document.getElementById("Life");
+l2 = document.getElementById("Flat");
+l3 = document.getElementById("SMG");
+l4 = document.getElementById("Champ");
+
+p1 = document.getElementById("Finish");
+p2 = document.getElementById("Vroom");
+p3 = document.getElementById("9DMG");
+p4 = document.getElementById("IDK");
+
+c1 = document.getElementById("Elec");
+c2 = document.getElementById("Hemlok");
+c3 = document.getElementById("SMG2");
+c4 = document.getElementById("Champion");
+//Variables End\\
+
+//Character --> Abilities Starts\\
+function changeHorizon() {
+  h1.src = "images/HorizonAbilities.png";
+  h1.classList.remove("clickable");
+}
+
+function changeLife() {
+  l1.src = "images/Lifeline-abilities.png";
+  l1.classList.remove("clickable");
+}
+
+function changePeace() {
+  p1.src = "images/Parody.png";
+  p1.classList.remove("clickable");
+}
+
+function changeElec() {
+  c1.src = "images/Conduit-abilities.png";
+  c1.classList.remove("clickable");
+}
+//Character --> Abilities End\\
+
+//Audio Section starts\\
+function playStar() {
+  stopSounds();
+  h1.src = "images/Horizon.png";
+  document.getElementById("Star").play();
+  h1.classList.add("clickable");
+}
+function playTriple() {
+  stopSounds();
+  h1.src = "images/Horizon.png";
+  document.getElementById("3Gun").play();
+  h1.classList.add("clickable");
+}
+function playFlat() {
+  stopSounds();
+  l1.src = "images/Lifeline.png";
+  document.getElementById("Line").play();
+  l1.classList.add("clickable");
+}
+function playR9() {
+  stopSounds();
+  l1.src = "images/Lifeline.png";
+  document.getElementById("R9").play();
+  l1.classList.add("clickable");
+}
+function playCar() {
+  stopSounds();
+  p1.src = "images/Parody.png";
+  document.getElementById("Vroom").play();
+  p1.classList.add("clickable");
+}
+function playPeace() {
+  stopSounds();
+  p1.src = "images/Parody.png";
+  document.getElementById("Shawty").play();
+  p1.classList.add("clickable");
+}
+function playHem() {
+  stopSounds();
+  c1.src = "images/Conduit.png";
+  document.getElementById("3Burst").play();
+  c1.classList.add("clickable");
+}
+function playAlt() {
+  stopSounds();
+  c1.src = "images/Conduit.png";
+  document.getElementById("Twinsies").play();
+  c1.classList.add("clickable");
+}
+
+function stopSounds() {
+  document.getElementById("Star").pause();
+  document.getElementById("Star").currentTime = 0;
+  document.getElementById("3Gun").pause();
+  document.getElementById("3Gun").currentTime = 0;
+  document.getElementById("Line").pause();
+  document.getElementById("Line").currentTime = 0;
+  document.getElementById("R9").pause();
+  document.getElementById("R9").currentTime = 0;
+  document.getElementById("3Burst").pause();
+  document.getElementById("3Burst").currentTime = 0;
+  document.getElementById("Twinsies").pause();
+  document.getElementById("Twinsies").currentTime = 0;
+  document.getElementById("Vroom").pause();
+  document.getElementById("Vroom").currentTime = 0;
+  document.getElementById("Shawty").pause();
+  document.getElementById("Shawty").currentTime = 0;
+}
+//Audio Sections ends\\
+
+//Videos Start\\
+function playLeader() {
+  document.getElementById("Frame").setAttribute.remove("hide");
+  document.getElementById("Leader").setAttribute.add("hide");
+
+  document.getElementById("Frame").src =
+    "https://www.youtube.com/embed/Dn90dxhsOtE?si=1CpxCzzw19LZdSi5";
+}
+function lifeVideo() {
+  document.getElementById("Frame2").classList.remove("hide");
+  document.getElementById("Champ").classList.add("hide");
+
+  document.getElementById("Frame2").src =
+    "https://www.youtube.com/embed/OKUtZFMiIsc?si=TF7nvZJB4meZHFqK";
+}
+
+function playClutch() {
+  document.getElementById("Frame3").classList.remove("hide");
+  document.getElementById("Clutch").classList.add("hide");
+
+  document.getElementById("Frame3").src =
+    "https://www.youtube.com/embed/41Fdyfaw5Yg?si=z7R5B_Z9tdRBl3vo";
+}
+
+function playElec() {
+  document.getElementById("Frame4").classList.remove("hide");
+  document.getElementById("Champion").classList.add("hide");
+
+  document.getElementById("Frame4").src =
+    "https://www.youtube.com/embed/Ukc8r1M2G30?si=KpIw9hjHfi09CtRO";
+}
+//Video Ends\\
